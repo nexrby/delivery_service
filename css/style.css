@@ -76,6 +76,7 @@ button {
     color: #595959;
     font-size: 16px;
     line-height: 24px;
+    position: relative;
 }
 
 .button:hover {
@@ -130,6 +131,16 @@ button {
     -webkit-mask: url("../img/icon/shopping-cart.svg") no-repeat 50% 50%;
     mask: url("../img/icon/shopping-cart.svg") no-repeat 50% 50%;
     background-repeat: no-repeat;
+}
+.button .button-cart-not-empty {
+    position: absolute;
+    left: 20%;
+    top: 2px;
+    display: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
 }
 
 .button-primary .button-cart-svg {
